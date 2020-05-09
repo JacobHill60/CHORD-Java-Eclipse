@@ -1,0 +1,58 @@
+Name Jacob Hill
+Date 11/11/2019
+CSC 344 001 
+Chord project 
+
+Language: JAVA 
+
+Run program in Hillchord.java class
+should run through main method
+
+
+
+README txt file describes how my code implements CHORD using Java
+we will do this by implementing an array into a hashtable
+
+PROBLEM:
+The purpose of this assignment is to find a random keyID within the range of our circular ID space.
+We can find this value by running through each necessary finger table until we land on a keyID that is equivalent
+to our desired keyID with a corresponding Node.
+
+SOLUTION & ISSUES:
+I had a difficult time avoiding the creation of unnecessary finger tables, so the output
+will show fingertables for each node in the array.
+
+My solution can be found in the fingertable of the desired keyID,
+I made it so a print statement pops up saying " We have located keyID x in the fingertable for node y" in the fingertable where desired_keyID is found.
+if the current keyID = desired keyID OR (keyID = desired keyID +-1 AND keyID != desired keyID)
+Note: If the initial Node is greater than our desried keyID, this code will not be able to output that print statement.
+
+
+
+Project Name: CHORD.Hill
+Located in src folder: Package: chord
+Class: Hillchord.java
+
+
+Three Methods and a Constructor
+
+1.Hashtable < Integer, Integer> table(int node)
+The purpose of this method is to take in a list of ordered Nodes and 
+organize each node in order to output their respective fingertable.
+
+This method returns a fingertable for each node.
+
+2.Main 
+The purpose of the main method (besides running the program) is to take two user inputs:
+> Desired Nodes
+> Desired User ID Space
+and will continue to iterate until you give the system the correct range of inputs.
+Main then passes these two values to the constructor where it calls upon the nodeANDidspace method
+
+3.nodeANDidspace
+The purpose of this method is to 
+> create an array based on user input from main
+> create a random keyID based on our circularidspace
+
+
+
